@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat";
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+#starBackground {
+  background: radial-gradient(ellipse at bottom, #0b1829 0%, #000000 100%);
+  position: absolute;
+  z-index: -1;
+}
+#starBackground canvas {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-container {
+  padding: 5% 0;
+}
+.main-container h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.planet-carousel {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 40px;
+}
+
+.planet-card {
+  background-color: rgb(59, 59, 61);
+  margin: 0 auto;
+  display: none;
+  max-width: calc(100% - 150px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 8px;
+  color: white;
+  -webkit-animation: opacity 0.5s ease-in-out;
+          animation: opacity 0.5s ease-in-out;
+  padding: 5%;
+}
+.planet-card h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.planet-card .planet-distance {
+  margin-bottom: 15px;
+}
+.planet-card .planet-orbital-period {
+  margin-bottom: 15px;
+}
+
+.planet-image {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 300px;
+  height: 300px;
+}
+.planet-image canvas {
+  border-radius: 10px;
+}
+
+.planet-card--visible {
+  display: block;
+}
+
+.planet-card--hidden {
+  display: none;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-button {
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#carousel-previous-button {
+  margin-left: 20px;
+}
+#carousel-previous-button:hover {
+  transform: translateX(-5px);
+  opacity: 0.8;
+}
+
+#carousel-next-button {
+  margin-right: 20px;
+}
+#carousel-next-button:hover {
+  transform: translateX(5px);
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+.bold {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-y: scroll;
+  }
+}/*# sourceMappingURL=style.css.map */

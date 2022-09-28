@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolas H - Solar System</title>
+  </head>
+  <body>
+    <canvas id="starBackground"></canvas>
+    <div class="main-container">
+      <h1>Solar system</h1>
+      <div id="planet-carousel" class="planet-carousel">
+        <div class="planet-card planet-card--visible">
+          <h2>Mercury</h2>
+          <div class="planet-image"></div>
+          <p class="planet-distance">
+            Distance from the sun: <span class="bold"> 0.466</span>
+          </p>
+          <p class="planet-orbital-period">
+            Orbital period: <span class="bold">88 days</span>
+          </p>
+          <p class="planet-description">
+            Mercury is the smallest planet in the Solar System and the closest
+            to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
+            shortest of all the Sun's planets.
+          </p>
+        </div>
+        <div class="planet-card">
+          <h2>Venus</h2>
+          <div class="planet-image"></div>
+
+          <p class="planet-distance">
+            Distance from the sun: <span class="bold">0.72 AU</span>
+          </p>
+          <p class="planet-orbital-period">
+            Orbital period: <span class="bold">225 days</span>
+          </p>
+          <p class="planet-description">
+            Venus is the second planet from the Sun. It is named after the Roman
+            goddess of love and beauty. As the second-brightest natural object
+            in Earth's night sky after the Moon, Venus can cast shadows and can
+            be, on rare occasion, visible to the naked eye in broad daylight.
+          </p>
+        </div>
+        <div class="planet-card">
+          <h2>Earth</h2>
+          <div class="planet-image"></div>
+
+          <p class="planet-distance">
+            Distance from the sun: <span class="bold">1 AU</span>
+          </p>
+          <p class="planet-orbital-period">
+            Orbital period: <span class="bold">365 days</span>
+          </p>
+          <p class="planet-description">
+            Earth is the third planet from the Sun and the only astronomical
+            object known to harbor life. While large volumes of water can be
+            found throughout the Solar System, only Earth sustains liquid
+            surface water.
+          </p>
+        </div>
+        <div class="planet-card">
+          <h2>Mars</h2>
+          <div class="planet-image"></div>
+
+          <p class="planet-distance">
+            Distance from the sun: <span class="bold">1.52 AU</span>
+          </p>
+          <p class="planet-orbital-period">
+            Orbital period: <span class="bold">687 days</span>
+          </p>
+          <p class="planet-description">
+            Mars is the fourth planet from the Sun and the second-smallest
+            planet in the Solar System, being larger than only Mercury. In
+            English, Mars carries a name of the Roman god of war, and is often
+            referred to as the "Red Planet".
+          </p>
+        </div>
+        <div class="planet-card">
+          <h2>Jupiter</h2>
+          <div class="planet-image"></div>
+
+          <p class="planet-distance">
+            Distance from the sun: <span class="bold">5.2 AU</span>
+          </p>
+          <p class="planet-orbital-period">
+            Orbital period: <span class="bold">12 years</span>
+          </p>
+          <p class="planet-description">
+            Jupiter is the fifth planet from the Sun and the largest in the
+            Solar System. It is a gas giant with a mass one-thousandth that of
+            the Sun, but two-and-a-half times that of all the other planets in
+            the Solar System combined.
+          </p>
+        </div>
+        <div class="planet-card">
+          <h2>Saturn</h2>
+          <div class="planet-image"></div>
+
+          <p class="planet-distance">
+            Distance from the sun: <span class="bold">9.5 AU</span>
+          </p>
+          <p class="planet-orbital-period">
+            Orbital period: <span class="bold">29 years</span>
+          </p>
+          <p class="planet-description">
+            Saturn is the sixth planet from the Sun and the second-largest in
+            the Solar System, after Jupiter. It is a gas giant with an average
+            radius about nine times that of Earth.
+          </p>
+        </div>
+        <div class="planet-card">
+          <h2>Uranus</h2>
+          <div class="planet-image"></div>
+
+          <p class="planet-distance">
+            Distance from the sun: <span class="bold">19.2 AU</span>
+          </p>
+          <p class="planet-orbital-period">
+            Orbital period: <span class="bold">84 years</span>
+          </p>
+          <p class="planet-description">
+            Uranus is the seventh planet from the Sun. It has the third-largest
+            planetary radius and fourth-largest planetary mass in the Solar
+            System. It is named after the Greek god of the sky, Uranus.
+          </p>
+        </div>
+        <div class="planet-card">
+          <h2>Neptune</h2>
+          <div class="planet-image"></div>
+
+          <p class="planet-distance">
+            Distance from the sun: <span class="bold">30.1 AU</span>
+          </p>
+          <p class="planet-orbital-period">
+            Orbital period: <span class="bold">165 years</span>
+          </p>
+          <p class="planet-description">
+            Neptune is the eighth and farthest known planet from the Sun in the
+            Solar System. In the Solar System, it is the fourth-largest planet
+            by diameter, the third-most-massive planet, and the densest giant
+            planet.
+          </p>
+        </div>
+
+        <div class="carousel-buttons">
+          <button id="carousel-previous-button" class="carousel-button">
+            <span>&#8249;</span>
+          </button>
+          <button id="carousel-next-button" class="carousel-button">
+            <span>&#8250;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/starBackground.js"></script>
+  </body>
+</html>

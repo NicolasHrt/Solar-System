@@ -82,7 +82,7 @@ Planets.push(uranus);
 
 const neptuneGeometry = new THREE.SphereGeometry(15);
 const neptuneTexture = new THREE.TextureLoader().load(
-  "./textures/2K_neptune.jpg"
+  "./textures/2k_neptune.jpg"
 );
 const neptuneMaterial = new THREE.MeshBasicMaterial({ map: neptuneTexture });
 const neptune = new THREE.Mesh(neptuneGeometry, neptuneMaterial);
